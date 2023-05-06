@@ -21,7 +21,7 @@ pub const VISIBLE_CLASS: &str = "visible";
 pub const HIDDEN: &str = "hidden";
 
 lazy_static::lazy_static! {
-  pub static ref PROMPT: String = Colour::Yellow.bold().paint("kathleenfrench@portfolio $ ").to_string();
+  pub static ref PROMPT: String = Colour::Yellow.bold().paint("ryangarcia@portfolio $ ").to_string();
 }
 
 lazy_static::lazy_static! {
@@ -81,11 +81,11 @@ pub fn goto_links(term: &Terminal, line: &str) {
   match target {
       "github" => {
           term.writeln(&format!("redirecting to {}...", target));
-          utils::open_in_new_tab("https://github.com/kathleenfrench");
+          utils::open_in_new_tab("https://github.com/ionninja");
       },
       "linkedin" => {
           term.writeln(&format!("redirecting to {}...", target));
-          utils::open_in_new_tab("https://www.linkedin.com/in/frenchkathleen/");
+          utils::open_in_new_tab("https://www.linkedin.com/in/myelement/");
       },
       "email" => {
           utils::open_in_new_tab("https://mail.google.com/mail/?view=cm&fs=1&to=kfrench.eng@gmail.com");
