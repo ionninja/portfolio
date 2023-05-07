@@ -15,7 +15,7 @@ pub async fn index(session: Session, hb: web::Data<Handlebars<'_>>) -> Result<Ht
     session.set("visit_count", visit_count)?;
 
     let data = json!({
-        "name": "kathleenfrench.co"
+        "name": "thief.su"
     });
 
     let body = hb.render("index", &data).unwrap();
